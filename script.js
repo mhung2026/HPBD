@@ -27,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 var openWebsiteBtn = document.getElementById('openWebsiteBtn');
 openWebsiteBtn.addEventListener('click', function() {
-  window.open('https://www.instagram.com/direct/t/111487736906115/', '_blank');
+  window.open('https://www.instagram.com/hung.2026', '_blank');
 });
