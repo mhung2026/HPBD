@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="styles.css">
     <title>Happy Birthday My Girl</title>
 </head>
-
 <body>
-    <div class="container">
-
-        <div class="Cake">
-            <img src="cake.png" alt="Birthday Cake">
-        </div>       
-        <button onclick="blowCandles()">Thổi Nến</button>
+    <div>
+        <audio id="backgroundAudio" loop>
+            <source src="HPBD.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var backgroundAudio = document.getElementById('backgroundAudio');
+            backgroundAudio.play();
+        </script>
     </div>
+    <div>
+        <img class="flame" src="https://lh3.googleusercontent.com/pw/ABLVV86gLCN8SoFVIL2sdxzs0M9t2MWQrdLgmW6FeeiRaeNsaXGWlYfR6-ZN3P8Dj2CKQihsMm22xZL9i8bhbhW4vBK6GY5BVHidwom0LynOgJP3Mq2tOEdAj9ZvLtAN9ODvr2EEVdbYxtcHPuHrPBR63ws6sPpS3WScQqUneh_KqbOdYD1886taXvUnzb54oKmBju1hAPnTWT9YQffao20bj833V5m-8BvLyDkHhvM33lqFTb52Np0cg5FK1EJFOnh5gTwLdViOA_p-b_QEoJh0eTVKyUu9RoeWAEnCU8vbwh4pM3-ktaxa8TxKXGvlmpgPwi8k2veUNqT3zlb6n8jz8ME8Brhrq6DzPsnSYWkUY5M7wHKGt7QCptgauKQhccpWlUtN4OaKQbzkV6tOfiOWG3H6RWlo_t7TWa8Xp-aFPZa1bgdR6cXV_vaEUUtOnOfXZkMaK5PlN9EDtiVtJkrr-G2aVE6lkU-EflypcftcDm8CKMho_aX9xDqhmPq-MdmEbIHEElhxxoqTteqnXpA2isSA2ZjSpjGKV6ho6WPSC53H4wRA043rBEkAvUN3sf3qnlrV15QTSiW2ZOPjw1vzkaVXvqWnXXbnsQiw1JwkC16SGK-H8mq3I96UkDZetSFsTPrZEHRZv3P773_ssbHRsY7fqFw0t5MbGMWLjy06Vjnbj8jSwzz0lSw9Nvpc11vBooHFTMVtT-JWP0QFeLsIk1Q4mE93Pnr2_YodieVoXVs3G3WV-F8peUG1MT6q2A3gOLeZ27I6tdWxtaRtkCVpAALfyLVx0NS5PL0d5eM1XmrJlGBmqPwtY5wly0_yRctT-GTFW1oDfVlY9u_dobNnAgIYR1COokWsDyYiXFycycGSAQjJSnmAFQacW8-I_fUNa9Zpgg=w100-h169-s-no-gm?authuser=0" alt="Flame ON">
+        <img class="flame1" src="https://lh3.googleusercontent.com/pw/ABLVV86gLCN8SoFVIL2sdxzs0M9t2MWQrdLgmW6FeeiRaeNsaXGWlYfR6-ZN3P8Dj2CKQihsMm22xZL9i8bhbhW4vBK6GY5BVHidwom0LynOgJP3Mq2tOEdAj9ZvLtAN9ODvr2EEVdbYxtcHPuHrPBR63ws6sPpS3WScQqUneh_KqbOdYD1886taXvUnzb54oKmBju1hAPnTWT9YQffao20bj833V5m-8BvLyDkHhvM33lqFTb52Np0cg5FK1EJFOnh5gTwLdViOA_p-b_QEoJh0eTVKyUu9RoeWAEnCU8vbwh4pM3-ktaxa8TxKXGvlmpgPwi8k2veUNqT3zlb6n8jz8ME8Brhrq6DzPsnSYWkUY5M7wHKGt7QCptgauKQhccpWlUtN4OaKQbzkV6tOfiOWG3H6RWlo_t7TWa8Xp-aFPZa1bgdR6cXV_vaEUUtOnOfXZkMaK5PlN9EDtiVtJkrr-G2aVE6lkU-EflypcftcDm8CKMho_aX9xDqhmPq-MdmEbIHEElhxxoqTteqnXpA2isSA2ZjSpjGKV6ho6WPSC53H4wRA043rBEkAvUN3sf3qnlrV15QTSiW2ZOPjw1vzkaVXvqWnXXbnsQiw1JwkC16SGK-H8mq3I96UkDZetSFsTPrZEHRZv3P773_ssbHRsY7fqFw0t5MbGMWLjy06Vjnbj8jSwzz0lSw9Nvpc11vBooHFTMVtT-JWP0QFeLsIk1Q4mE93Pnr2_YodieVoXVs3G3WV-F8peUG1MT6q2A3gOLeZ27I6tdWxtaRtkCVpAALfyLVx0NS5PL0d5eM1XmrJlGBmqPwtY5wly0_yRctT-GTFW1oDfVlY9u_dobNnAgIYR1COokWsDyYiXFycycGSAQjJSnmAFQacW8-I_fUNa9Zpgg=w100-h169-s-no-gm?authuser=0" alt="Flame ON">
+        <img class="flame2" src="https://lh3.googleusercontent.com/pw/ABLVV86gLCN8SoFVIL2sdxzs0M9t2MWQrdLgmW6FeeiRaeNsaXGWlYfR6-ZN3P8Dj2CKQihsMm22xZL9i8bhbhW4vBK6GY5BVHidwom0LynOgJP3Mq2tOEdAj9ZvLtAN9ODvr2EEVdbYxtcHPuHrPBR63ws6sPpS3WScQqUneh_KqbOdYD1886taXvUnzb54oKmBju1hAPnTWT9YQffao20bj833V5m-8BvLyDkHhvM33lqFTb52Np0cg5FK1EJFOnh5gTwLdViOA_p-b_QEoJh0eTVKyUu9RoeWAEnCU8vbwh4pM3-ktaxa8TxKXGvlmpgPwi8k2veUNqT3zlb6n8jz8ME8Brhrq6DzPsnSYWkUY5M7wHKGt7QCptgauKQhccpWlUtN4OaKQbzkV6tOfiOWG3H6RWlo_t7TWa8Xp-aFPZa1bgdR6cXV_vaEUUtOnOfXZkMaK5PlN9EDtiVtJkrr-G2aVE6lkU-EflypcftcDm8CKMho_aX9xDqhmPq-MdmEbIHEElhxxoqTteqnXpA2isSA2ZjSpjGKV6ho6WPSC53H4wRA043rBEkAvUN3sf3qnlrV15QTSiW2ZOPjw1vzkaVXvqWnXXbnsQiw1JwkC16SGK-H8mq3I96UkDZetSFsTPrZEHRZv3P773_ssbHRsY7fqFw0t5MbGMWLjy06Vjnbj8jSwzz0lSw9Nvpc11vBooHFTMVtT-JWP0QFeLsIk1Q4mE93Pnr2_YodieVoXVs3G3WV-F8peUG1MT6q2A3gOLeZ27I6tdWxtaRtkCVpAALfyLVx0NS5PL0d5eM1XmrJlGBmqPwtY5wly0_yRctT-GTFW1oDfVlY9u_dobNnAgIYR1COokWsDyYiXFycycGSAQjJSnmAFQacW8-I_fUNa9Zpgg=w100-h169-s-no-gm?authuser=0" alt="Flame ON">
+    </div>
+    <div class="container">
+        <div class="Cake">
+            <img class="BC" src="https://lh3.googleusercontent.com/pw/ABLVV86eHjyo5hCZ4aukdC3dIKrQR9iUdoGh9goulxlDpBIzCDMIgn1SL35Jjh4AB0c4ZxKc7c4NDtoHvO3eCu4SAut31XOENawQ-QWelE4HlfLniNlk82IZ0PY1QxusV_i-Nwdk2RlJjrS_qKIGsO7Duvg6RJK_UE0gEJsdTrYAGkGj3gO_2vtkAQG5NGUKS_UZStPIDEOsPGX_R2PHDrFfySDh31N-0zixEzHDDzKXt53L-VSMWtq0pGxzKPow3t-sgN42yn82gbP5eMBGuxWuJOyz_f1DHv38jW1LGIKWGf23bkJXRvaCrya_5aDi7HGHDxIOLV0TnvEGD0FQmGLNNmieLEVHlqjnB0RyL1sWdMQ9S8BBab_m87kUEtzDiSaLv6Oz6Q4IPwgGn_Th4AgpVfrPj_UELGW8UevhhYVmwksat3Wpt9DCWlt8Gq-M8vCUa3nG45H7wINHmBCjS4NCvLJBH5bY02AtICqoRf6qu3ClLBolYaKEh31ZVsX05fNIBrfwtTbm1oJX8UZa-8G9JQ5nppAkeV4VEdUOzVoOsGDlMqipq5MyXhP4mR-clVeU5iV8xombEFahaKbverdAK8yWumhDXD-tCWP0lbpIqFJVWbw10Qp1dCfkoHc-n3-zVi_7VwSq_8AFu2DBVXbyp7BLg1u54ceyea2ndL1Tc82pGgV1Ws8Dx4FAChHE5rIHVQOQlCE46NIgd5uSS1H2rpssgC64oSv3VkiytaTBa3oJICQcDEzRKhGJbULZbYNz6DMR5GAxa6SIeGip8Mg41jHi3_G-pp3Nqi3BOpFYFLCHCKzpvC-3fznHIetujy3cRXHc4N7MWOR9q47PDeKysdQoDWga-S-EHI9c4KoqVo3ISP4TIaneDllHQyLQ0_P2Cd0UFg=w767-h578-s-no-gm?authuser=0" alt="Birthday Cake">
+        </div>
+        <button id="showImageButton" onclick="blowCandles()">Thổi Nến</button>
+    </div>
+    <button class="showButton" style="background-color: hsla(120, 100%, 50%, 0);" onclick="clickGift()">
+    </button>
     <script src="script.js"></script>
 </body>
-
 </html>
