@@ -4,8 +4,7 @@ function blowCandles() {
     flameElements.forEach(function (flameElement) {
         flameElement.style.opacity = '0';
     });
-}
-document.addEventListener('DOMContentLoaded', function () {
+
     var showImageButton = document.getElementById('showImageButton');
     var imageContainer = document.getElementById('imageContainer');
     showImageButton.addEventListener('click', function () {
@@ -19,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
         imageContainer.innerHTML = '';
         imageContainer.appendChild(imgElement);
     });
+}
+document.addEventListener('DOMContentLoaded', function () {
+    
 });
 document.addEventListener('DOMContentLoaded', function () {
     var openWebsiteBtn = document.getElementById('openWebsiteBtn');
