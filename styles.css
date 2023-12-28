@@ -1,36 +1,56 @@
 body {
     display: flex;
+    text-align: center; 
     align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #fff; /* Màu hồng chủ đạo */
+    background-color: #fff;
+}
+.flame {
+    transform: translate(556px, -310px);
+}
+.flame1 {
+    transform: translate(379px, -310px);
+}
+.flame2 {
+    transform: translate(202px, -310px);
+} 
+.BC {
+    transform: translate(-150px,0px);
+}
+.Cake {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
-    text-align: center;
+    padding-top: 100px;
+    text-align: center; 
 }
-
 @keyframes flicker {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0.5;
     }
 }
-
 button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #ff4081; 
+    background-color: #ff4081;
     border: none;
     border-radius: 5px;
     color: #fff;
     cursor: pointer;
+    transform: translate(-150px,0px);
 }
-
 button:hover {
     background-color: #d81b60;
 }
-
+#imageContainer {
+    opacity: 0%;
+}
