@@ -26,8 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 var openWebsiteBtn = document.getElementById('openWebsiteBtn');
-
 openWebsiteBtn.addEventListener('click', function() {
-  // Mở trang web khi nút được nhấn
-  window.open('https://www.instagram.com/direct/t/111487736906115/', '_blank'); // '_blank' để mở trong cửa sổ/tab mới
+  window.open('https://www.instagram.com/direct/t/111487736906115/', '_blank');
 });
