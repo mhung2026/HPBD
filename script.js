@@ -8,7 +8,6 @@ function blowCandles() {
 document.addEventListener('DOMContentLoaded', function () {
     var showImageButton = document.getElementById('showImageButton');
     var imageContainer = document.getElementById('imageContainer');
-    var divContainer = document.getElementsByClassName("container")
     showImageButton.addEventListener('click', function () {
         imageContainer.style.display = 'block';
         var imgElement = document.createElement('img');
@@ -21,7 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
         imageContainer.appendChild(imgElement);
     });
 });
-var openWebsiteBtn = document.getElementById('openWebsiteBtn');
-openWebsiteBtn.addEventListener('click', function () {
-    window.open('https://www.instagram.com/hung.2026', '_blank');
+document.addEventListener('DOMContentLoaded', function () {
+    var openWebsiteBtn = document.getElementById('openWebsiteBtn');
+    openWebsiteBtn.addEventListener('click', function () {
+        window.open('https://www.instagram.com/hung.2026', '_blank');
+    });
 });
