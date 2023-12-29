@@ -10,11 +10,12 @@
 
 <body>
     <div>
-        <audio id="backgroundAudio" loop>
+        <audio id="backgroundAudio" loop >
             <source src="HPBD.mp3" type="audio/mp3">
         </audio>
         <script>
             var backgroundAudio = document.getElementById('backgroundAudio');
+            backgroundAudio.volume = 0.5;
             backgroundAudio.play();
         </script>
     </div>
