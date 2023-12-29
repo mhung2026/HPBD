@@ -3,8 +3,6 @@ function blowCandles() {
     flameElements.forEach(function (flameElement) {
         flameElement.style.opacity = '0';
     });
-
-
 }
 document.addEventListener('DOMContentLoaded', function () {
     var showImageButton = document.getElementById('showImageButton');
@@ -14,9 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var imgElement = document.createElement('img');
         imgElement.src = 'https://github.com/mhung2026/test/blob/main/gift.png?raw=true';
         imgElement.alt = 'Image';
-        imgElement.style.width = '70%';
-        imgElement.style.height = '70%';
-        imageContainer.style.transform = 'translateX(3%)';
+        imgElement.style.width = '60%';
+        imgElement.style.height = '60%';
         imageContainer.innerHTML = '';
         imageContainer.appendChild(imgElement);
     });
