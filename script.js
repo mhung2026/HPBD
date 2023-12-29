@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         imgElement.alt = 'Image';
         imgElement.style.width = '70%';
         imgElement.style.height = '70%';
-        imageContainer.style.transform = 'translateX(0%)';
+        imageContainer.style.transform = 'translateX(3%)';
         imageContainer.innerHTML = '';
         imageContainer.appendChild(imgElement);
     });
