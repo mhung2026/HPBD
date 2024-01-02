@@ -8,7 +8,6 @@ function blowCandles() {
     flameElements.forEach(function (flameElement) {
         flameElement.style.opacity = '0';
     });
-    // buttonElements.style.display = 'none';   
     setTimeout(function () {
         document.getElementById('gift').classList.toggle('hidden');
     }, 2000);
