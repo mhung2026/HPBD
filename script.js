@@ -9,7 +9,9 @@ function blowCandles() {
         flameElement.style.opacity = '0';
     });
     // buttonElements.style.display = 'none';   
-    document.getElementById('gift').classList.toggle('hidden');
+    setTimeout(function () {
+        document.getElementById('gift').classList.toggle('hidden');
+    }, 2000);
 }
 document.addEventListener('DOMContentLoaded', function () {
     var openWebsiteBtn = document.getElementById('gift');
