@@ -6,7 +6,7 @@ function blowCandles() {
     var flameElements = document.querySelectorAll('.image');
     var buttonElements = document.getElementById('showImageButton');
     flameElements.forEach(function (flameElement) {
-        flameElement.style.display = 'none';
+        flameElement.style.opacity = '0';
     });
     // buttonElements.style.display = 'none';   
     document.getElementById('gift').classList.toggle('hidden');
