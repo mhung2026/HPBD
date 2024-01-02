@@ -6,9 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Happy Birthday My Girl</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .container {
+            position: absolute;
+            transform: translateX(-50%);
+            max-width: 80%; /* Adjust as needed */
+        }
+
+        .flame, .Cake {
+            width: 100%; /* Make images fill the container */
+            max-width: 300px; /* Set a maximum width for images */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff4081;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto; /* Center the button */
+        }
+
+        button:hover {
+            background-color: #d81b60;
+        }
+
+        #imageContainer {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
+    
     <div>
         <audio id="HPBDAudio">
             <source src="https://github.com/mhung2026/test/blob/main/HPBD.mp3?raw=true" type="audio/mp3">
