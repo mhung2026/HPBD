@@ -1,4 +1,4 @@
-body {
+/* body {
     display: flex;
     text-align: center;
     align-items: center;
@@ -51,4 +51,41 @@ button:hover {
 
 #imageContainer {
     opacity: 100%;
+}
+ul {
+    list-style: none;
+} */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+
+}
+
+.image {
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+#gift {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+    width: 60%;
+    height: 60%;
+}
+ul {
+    list-style: none;
 }

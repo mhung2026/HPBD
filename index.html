@@ -9,40 +9,18 @@
 </head>
 
 <body>
-    
-    <div>
-        <audio id="HPBDAudio">
-            <source src="https://github.com/mhung2026/test/blob/main/HPBD.mp3?raw=true" type="audio/mp3">
-        </audio>
-    </div>
-    <div class="content">
-        <div class="container">
-            <img src="https://github.com/mhung2026/test/blob/main/flame.png?raw=true" alt="Image B" class="image">
-            <img src="https://github.com/mhung2026/test/blob/main/cake.png?raw=true" alt="Image A" class="image">
-            <button id="showImageButton" onclick="blowCandles()">Thổi Nến</button>
-            <button style="background-color: hsla(120, 100%, 50%, 0);" id="openWebsiteBtn">
-                <div id="imageContainer"></div>
-            </button>
 
-            <!-- <div>
-                <img class="flame"
-                    src="https://github.com/mhung2026/test/blob/main/flame.png?raw=true"
-                    alt="Flame">
-            </div>
-            <div class="Cake">
-                <img class="BC"
-                    src="https://github.com/mhung2026/test/blob/main/cake.png?raw=true"
-                    alt="Birthday Cake">
-            </div> -->
-            <!-- <div>
-                <button id="showImageButton" onclick="blowCandles()">Thổi Nến</button>
-            </div> -->
-        </div>
-        <!-- <div class="Gift">
-            <button style="background-color: hsla(120, 100%, 50%, 0);" id="openWebsiteBtn">
-                <div id="imageContainer"></div>
-            </button>
-        </div> -->
+    <audio id="HPBDAudio">
+        <source src="https://github.com/mhung2026/test/blob/main/HPBD.mp3?raw=true" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <ul>
+            <li><img src="https://github.com/mhung2026/test/blob/main/flame.png?raw=true" alt="Flame" class="image">
+            </li>
+            <img src="https://github.com/mhung2026/test/blob/main/gift.png?raw=true" alt="Gift" id="gift" class="hidden">
+            <img src="https://github.com/mhung2026/test/blob/main/cake.png?raw=true" alt="Cake">
+            <li><button id="showImageButton" onclick="blowCandles()">Thổi Nến</button></li>
+        </ul>
     </div>
     <script src="script.js"></script>
 </body>
