@@ -1,7 +1,7 @@
 function blowCandles() {
     var audio = document.getElementById("HPBDAudio");
     audio.play();
-    audio.volume = 0;
+    audio.volume = 0.1;
 
     var flameElements = document.querySelectorAll('.image');
     var buttonElements = document.getElementById('showImageButton');
